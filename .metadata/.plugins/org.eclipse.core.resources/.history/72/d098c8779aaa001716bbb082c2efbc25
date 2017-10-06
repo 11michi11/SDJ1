@@ -1,0 +1,13 @@
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class Main {
+
+	Car car = new Car("black", "John", "845");
+	
+	System.out.println(car.owner);
+	
+	
+	
+}

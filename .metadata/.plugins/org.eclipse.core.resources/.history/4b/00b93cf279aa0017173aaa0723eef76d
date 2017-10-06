@@ -1,0 +1,21 @@
+
+public class Notebook {
+
+	private int numberOfNotes;
+	private Note[] notes;
+	
+	public Notebook(int numberOfNotes) {
+		this.numberOfNotes = numberOfNotes;
+		this.notes = new Note[numberOfNotes];
+	}
+
+	public int getNumberOfNotes() {
+		return numberOfNotes;
+	}
+	
+	public Note getNote(int index) {
+		return notes[index];
+	}
+	
+	
+}

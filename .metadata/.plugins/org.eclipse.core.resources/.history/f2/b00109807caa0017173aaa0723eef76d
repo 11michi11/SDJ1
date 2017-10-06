@@ -1,0 +1,53 @@
+
+public class Notebook {
+
+	private int numberOfNotes;
+	private Note[] notes;
+	
+	public Notebook(int maxNumberOfNotes) {
+		this.numberOfNotes = 0;
+		this.notes = new Note[maxNumberOfNotes];
+	}
+
+	public int getNumberOfNotes() {
+		return numberOfNotes;
+	}
+	
+	public Note getNote(int index) {
+		return notes[index];
+	}
+	
+	public String getMessage(int index) {
+		return notes[index].getMessage();
+	}
+	
+	public void addNote(Note note) {
+		notes[numberOfNotes] = note;
+		numberOfNotes++;
+	}
+	
+	public void addNote(String message) {
+		notes[numberOfNotes] = new Note(message);
+		numberOfNotes++;
+	}
+	
+	public void addHighPriorityNote(String message) {
+		notes[numberOfNotes] = new Note(message);
+		notes[numberOfNotes].setToHighPriority();
+		numberOfNotes++;
+	}
+	
+	public void removeNote(int index) {
+		for(int i = index;i<numberOfNotes - 1;i++)
+			notes[i] = notes[i + 1];
+		notes[numberOfNotes] = null;
+	
+		numberOfNotes--;
+	}
+	
+	public Note[] getAllNotes() {
+		
+	}
+	
+	
+}

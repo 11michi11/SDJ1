@@ -1,0 +1,19 @@
+import java.util.Date;
+
+public class Student {
+
+	public int age;
+	protected int pin;
+	private Date date;
+	
+	public Student(int age, int pin, Date date) {
+		this.age = age;
+		this.pin = pin;
+		this.date = date.copy();
+	}
+	
+	
+	public int getPin() {
+		return pin;
+	}
+}

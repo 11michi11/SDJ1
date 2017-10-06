@@ -1,0 +1,7 @@
+
+public class CakeDemo {
+	
+	public static void main(String[] args) {
+		Cake cake = new Cake("Sernik", 200);
+	}
+}

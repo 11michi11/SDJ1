@@ -1,0 +1,13 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		Car car = new Car("black", "John", "165", true);
+		
+		Car newCar = new Car("black", "John", "165", true);
+		
+		
+		if(newCar == car)
+			System.out.println("Equal");
+	}
+}

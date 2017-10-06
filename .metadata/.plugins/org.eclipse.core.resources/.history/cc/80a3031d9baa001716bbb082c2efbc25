@@ -1,0 +1,9 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		Car car = new Car("black", "John", "165");
+		
+		System.out.println(car.owner);
+	}
+}

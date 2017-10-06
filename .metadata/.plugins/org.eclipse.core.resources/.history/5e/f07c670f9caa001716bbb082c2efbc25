@@ -1,0 +1,13 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		Car car = new Car("black", "John", "165", true);
+		
+		System.out.println(car.getColour());
+		car.setColour("blue");
+		
+		if(car.isWorking())
+			System.out.println("Let's ride!");
+	}
+}

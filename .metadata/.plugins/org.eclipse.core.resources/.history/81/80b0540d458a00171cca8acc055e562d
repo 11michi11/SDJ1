@@ -1,0 +1,60 @@
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
+
+public class Nim
+{
+   static Scanner in = new Scanner(System.in);
+   
+   public static void main(String[] args) {
+      ArrayList<Integer> piles = new ArrayList<Integer>();
+      Random rn = new Random();
+      char player = '1';
+      
+      for(int i=rn.nextInt(5);i<5;i++)
+         piles.add(rn.nextInt(9)+1);
+     
+      printPiles(piles);
+      
+      while(!checkWin(piles, player)) {
+         playerMove(piles, player);
+         printPiles(piles);
+         player = player == '1' ? '2' : '1';
+      }
+   }
+   
+   public static void playerMove(ArrayList<Integer> piles, char player) {
+      int pile, amount;
+      System.out.println("Player " + player + " moves");
+      do { 
+         System.out.println("Choose a pile (make sure you enetered valid value)");
+         pile = in.nextInt()-1;
+      }while(!(pile >= 0 && pile < piles.size())); 
+      
+      do {
+         System.out.println("How many sticks do you want to remove? (make sure you enetered valid value)");
+         amount = in.nextInt();
+      }while(!(amount > 0 && amount <= piles.get(pile)));
+      
+      piles.set(pile, piles.get(pile) - amount);
+      
+   }
+   
+   public static void printPiles(ArrayList<Integer> piles) {
+      for(int e : piles) {
+//         if(e == 0)
+//            System.out.println("");
+         for(int i=e;i>0;i--)
+            System.out.print("|");
+         System.out.println("");
+      }
+   }
+   
+   public static boolean checkWin(ArrayList<Integer> piles, char player) {
+      for(int e : piles)
+         if(e > 1)
+            return false;
+      System.out.println("Player " + player + "has won!");
+      return true;
+   }
+}

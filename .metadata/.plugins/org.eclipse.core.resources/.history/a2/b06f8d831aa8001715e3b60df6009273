@@ -1,0 +1,52 @@
+
+public class Line {
+
+	private String colour;
+	private Point pointA, pointB;
+
+	public Line(String colour, Point pointA, Point pointB) {
+		this.colour = colour;
+		this.pointA = pointA.copy();
+		this.pointB = pointB.copy();
+	}
+
+	public Line(Point pointA, Point pointB) {
+		this.colour = "black";
+		this.pointA = pointA;
+		this.pointB = pointB;
+	}
+
+	public String getColour() {
+		return colour;
+	}
+
+	public void setColour(String colour) {
+		this.colour = colour;
+	}
+
+	public Point getPointA() {
+		return pointA;
+	}
+
+	public void setPointA(Point pointA) {
+		this.pointA = pointA;
+	}
+
+	public Point getPointB() {
+		return pointB;
+	}
+
+	public void setPointB(Point pointB) {
+		this.pointB = pointB;
+	}
+
+	public double getLength() {
+		return Math.sqrt(Math.pow((pointB.getX() - pointA.getX()), 2) + Math.pow((pointB.getY() - pointA.getY()), 2));
+	}
+
+	public String toString() {
+		return "A " + colour + " line from (" + pointA.getX() + "," + pointA.getY() + ") to (" + pointB.getX() + ","
+				+ pointB.getY() + ") with length equal to " + this.getLength();
+	}
+
+}
