@@ -1,17 +1,17 @@
-import java.util.Date;
+import java.util.Scanner;
 
 public class PersonDemo {
-	
+
 	public static void main(String[] args) {
+
+		Person john = new Person("John", "19.16.3543");
 		
+		Person mike = john.copy();
 		
-		Person john = new Person("John", "11.06.1998");
-		
-		System.out.println(john.getName());
-		System.out.println(john.getBirthday());
-		
-		
-		john.setName("Johnny");
-		System.out.println(john.getName());
+		mike.setName("Micha³");
+
+		System.out.println(john);
+		System.out.println(mike);
+
 	}
 }

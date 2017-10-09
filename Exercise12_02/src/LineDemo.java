@@ -12,7 +12,6 @@ public class LineDemo {
 		
 		System.out.println(line);
 		
-		return new Tenant("", "");	
 		
 	}
 }
