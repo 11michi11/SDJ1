@@ -1,8 +1,0 @@
-
-public class LineDemo {
-
-	public static void main(String[] args) {
-		Line line = new Line(new Point(5,-3), new Point(3, 6));
-		System.out.println(line.getSlopeIntercept());
-	}
-}
