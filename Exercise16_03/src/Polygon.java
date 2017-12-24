@@ -24,7 +24,7 @@ public class Polygon {
 	}
 
 	public Colour getLineColour() {
-		return lineColour.copy();
+		return this.lineColour.copy();
 	}
 
 	// If there is no fill colour, method returns new Colour object,

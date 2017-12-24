@@ -25,7 +25,7 @@ public class Line {
 	}
 
 	public Point getPointA() {
-		return pointA;
+		return pointA.copy();
 	}
 
 	public void setPointA(Point pointA) {
@@ -33,7 +33,7 @@ public class Line {
 	}
 
 	public Point getPointB() {
-		return pointB;
+		return pointB.copy();
 	}
 
 	public void setPointB(Point pointB) {

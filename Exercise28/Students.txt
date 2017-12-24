@@ -1,0 +1,33 @@
+4;152278;Danusan Kandasamy;RO;4;8;87
+4;220951;Daniel Berglov;DK;6;10;92
+4;235047;Ousmane Doumoya;GR;1;8;98
+4;251341;Boris Sidlo;BG;11;6;97
+3;251398;Flemming Vindelev;RO;5;5;97
+3;266078;EDUARD NICOLAE COSTEA;DK;7;1;90
+3;266087;Stefan Adrian Grasu;PL;5;2;96
+2;266091;Rares-Daniel Gliga;NL;4;17;97
+2;266097;Mihai Tirtara;SK;12;23;96
+2;266099;Michaela Golhova;LV;12;28;97
+21;266100;Remedios Pastor;LT;11;29;90
+21;266105;Andrei Cioanca;BG;2;22;97
+21;266106;Mihail Rumenov Kanchev;HR;11;18;96
+21;266109;Rytis Kunigiskis;RO;10;10;97
+5;266116;Stefan Harabagiu;HU;1;6;97
+5;266123;Ionel-Cristinel Putinica;HU;12;21;97
+5;266128;Peipei Su;SK;3;15;98
+9;266129;Claudiu Rediu;RO;9;13;97
+9;266148;Dominika Katarzyna Kubicz;SK;9;11;95
+9;266307;Andrei Calin Popa;NP;9;18;98
+7;266352;Diyar Hussein Hussein;HU;10;17;99
+7;266489;Angel Petrov;DK;6;19;96
+7;266494;Michal Karol Pompa;RO;10;14;87
+53;266502;Daniela Koch;TR;8;8;86
+53;266826;Jonas Bach Fuursted;RO;8;19;96
+53;266827;Matej Michalek;RO;6;9;98
+33;266900;Nikita Roskovs;DK;5;5;69
+33;266908;Michal Ciebien;BG;4;15;97
+33;267142;Christian Schou Sorensen;BG;3;21;97
+19;267632;Tudor Ciobanu;ES;9;20;98
+19;268013;Miruna Botusan;PL;10;1;97
+19;269053;Dawei Li;RO;7;26;97
+19;269084;Rodrigo Pereira;DK;8;1;91
